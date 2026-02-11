@@ -16,7 +16,7 @@ export default function LokasiPage() {
         <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
           <div className="aspect-video bg-gray-200 flex items-center justify-center">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.23456789!2d109.7123456!3d-6.9123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTQnNDQuNCJTIDEwOcKwNDInNDQuNCJF!5e0!3m2!1sid!2sid!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.123456789!2d109.71234567890123!3d-6.912345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7024e123456789%3A0x123456789abcdef0!2sKUA%20Pecalungan!5e0!3m2!1sid!2sid!4v1234567890123"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -25,6 +25,19 @@ export default function LokasiPage() {
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
             />
+            <div className="p-4 bg-gray-50 border-t">
+              <a
+                href="https://maps.app.goo.gl/gMUcFLTf6WBGyXbm9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-600 hover:text-emerald-700 font-semibold inline-flex items-center"
+              >
+                📍 Buka di Google Maps
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -111,13 +124,13 @@ export default function LokasiPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+62284123456"
+              href="mailto:kuapecalungan15@gmail.com"
               className="bg-white text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-50 transition-colors inline-flex items-center justify-center"
             >
-              📞 Telepon Kami
+              📧 Email Kami
             </a>
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6285117737315"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-emerald-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-900 transition-colors inline-flex items-center justify-center"

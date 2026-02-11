@@ -167,21 +167,15 @@ export default function KontakPage() {
                   <span className="text-2xl">📧</span>
                   <div>
                     <p className="font-semibold text-gray-800">Email</p>
-                    <p className="text-gray-600 text-sm">kua.pecalungan@kemenag.go.id</p>
+                    <a href="mailto:kuapecalungan15@gmail.com" className="text-emerald-600 hover:text-emerald-700 text-sm">kuapecalungan15@gmail.com</a>
                   </div>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-2xl">📞</span>
-                  <div>
-                    <p className="font-semibold text-gray-800">Telepon</p>
-                    <p className="text-gray-600 text-sm">(0284) 123456</p>
-                  </div>
-                </div>
+
                 <div className="flex items-start space-x-3">
                   <span className="text-2xl">💬</span>
                   <div>
                     <p className="font-semibold text-gray-800">WhatsApp</p>
-                    <p className="text-gray-600 text-sm">0812-3456-7890</p>
+                    <a href="https://wa.me/6285117737315" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 text-sm">+62 851-1773-7315</a>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
