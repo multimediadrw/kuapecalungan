@@ -1,28 +1,42 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import MobileHeader from './components/MobileHeader';
+import FAQ from './components/FAQ';
 
 export default function Home() {
   const menuItems = [
     {
       title: 'Materi Fiqih',
       description: 'Pelajari fiqih dasar',
-      icon: '😊',
-      iconBg: 'bg-purple-100',
+      icon: (
+        <svg className="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      ),
+      iconBg: 'bg-emerald-50',
       href: '/fiqih',
     },
     {
       title: 'Tanya Ustadz',
       description: 'Konsultasi gratis',
-      icon: '✨',
-      iconBg: 'bg-orange-100',
+      icon: (
+        <svg className="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+        </svg>
+      ),
+      iconBg: 'bg-emerald-50',
       href: '/kontak',
     },
     {
       title: 'Lokasi KUA',
       description: 'Temukan lokasi kami',
-      icon: '👤',
-      iconBg: 'bg-blue-100',
+      icon: (
+        <svg className="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      ),
+      iconBg: 'bg-emerald-50',
       href: '/lokasi',
     },
   ];
@@ -43,7 +57,7 @@ export default function Home() {
                 className="flex items-center justify-between p-4 hover:bg-gray-50 rounded-xl transition-colors"
               >
                 <div className="flex items-center space-x-4">
-                  <div className={`w-14 h-14 ${item.iconBg} rounded-full flex items-center justify-center text-2xl`}>
+                  <div className={`w-14 h-14 ${item.iconBg} rounded-full flex items-center justify-center`}>
                     {item.icon}
                   </div>
                   <div>
@@ -95,22 +109,36 @@ export default function Home() {
             <h3 className="font-bold text-gray-800 mb-3">Akses Cepat</h3>
             <div className="grid grid-cols-2 gap-3">
               <Link href="/fiqih" className="flex flex-col items-center p-3 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-colors">
-                <span className="text-3xl mb-2">📖</span>
+                <svg className="w-8 h-8 text-emerald-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
                 <span className="text-sm font-medium text-gray-700">Fiqih</span>
               </Link>
               <Link href="/kontak" className="flex flex-col items-center p-3 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-colors">
-                <span className="text-3xl mb-2">💬</span>
+                <svg className="w-8 h-8 text-emerald-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                </svg>
                 <span className="text-sm font-medium text-gray-700">Tanya Jawab</span>
               </Link>
-              <Link href="/lokasi" className="flex flex-col items-center p-3 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors">
-                <span className="text-3xl mb-2">📍</span>
+              <Link href="/lokasi" className="flex flex-col items-center p-3 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-colors">
+                <svg className="w-8 h-8 text-emerald-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
                 <span className="text-sm font-medium text-gray-700">Lokasi</span>
               </Link>
               <Link href="/kontak" className="flex flex-col items-center p-3 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-colors">
-                <span className="text-3xl mb-2">📞</span>
+                <svg className="w-8 h-8 text-emerald-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
                 <span className="text-sm font-medium text-gray-700">Hubungi</span>
               </Link>
             </div>
+          </div>
+
+          {/* FAQ Section - Mobile */}
+          <div className="px-4 mt-6 pb-20">
+            <FAQ />
           </div>
         </div>
       </div>
@@ -164,7 +192,9 @@ export default function Home() {
               {/* Card 1 */}
               <Link href="/fiqih" className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <span className="text-3xl">📖</span>
+                  <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 text-center mb-2">
                   Materi Fiqih
@@ -177,7 +207,9 @@ export default function Home() {
               {/* Card 2 */}
               <Link href="/kontak" className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <span className="text-3xl">💬</span>
+                  <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                  </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 text-center mb-2">
                   Tanya Jawab
@@ -190,7 +222,10 @@ export default function Home() {
               {/* Card 3 */}
               <Link href="/lokasi" className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <span className="text-3xl">📍</span>
+                  <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 text-center mb-2">
                   Lokasi KUA
@@ -203,7 +238,9 @@ export default function Home() {
               {/* Card 4 */}
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <span className="text-3xl">🕌</span>
+                  <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 text-center mb-2">
                   Layanan Nikah
@@ -213,6 +250,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* FAQ Section - Desktop */}
+        <section className="py-16 px-4 bg-gray-50">
+          <div className="max-w-4xl mx-auto">
+            <FAQ />
           </div>
         </section>
 
