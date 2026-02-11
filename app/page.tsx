@@ -63,7 +63,7 @@ export default function Home() {
         <div className="px-4 mt-6 space-y-4 pb-6">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-bold text-gray-800">Informasi Penting</h2>
-            <Link href="/fiqih" className="text-pink-600 text-sm font-semibold flex items-center">
+            <Link href="/fiqih" className="text-emerald-600 text-sm font-semibold flex items-center">
               Lihat Semua
               <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -73,10 +73,10 @@ export default function Home() {
 
           {/* Info Cards */}
           <div className="flex space-x-3 overflow-x-auto pb-2">
-            <div className="flex-shrink-0 w-64 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-6 text-white">
+            <div className="flex-shrink-0 w-64 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl p-6 text-white">
               <h3 className="text-xl font-bold mb-2">Jadwal Shalat</h3>
-              <p className="text-purple-100 text-sm mb-4">Lihat jadwal shalat hari ini</p>
-              <Link href="/fiqih" className="inline-block bg-white text-purple-600 px-4 py-2 rounded-full text-sm font-semibold">
+              <p className="text-emerald-100 text-sm mb-4">Lihat jadwal shalat hari ini</p>
+              <Link href="/fiqih" className="inline-block bg-white text-emerald-600 px-4 py-2 rounded-full text-sm font-semibold">
                 Lihat Jadwal
               </Link>
             </div>
@@ -98,7 +98,7 @@ export default function Home() {
                 <span className="text-3xl mb-2">📖</span>
                 <span className="text-sm font-medium text-gray-700">Fiqih</span>
               </Link>
-              <Link href="/kontak" className="flex flex-col items-center p-3 bg-pink-50 rounded-xl hover:bg-pink-100 transition-colors">
+              <Link href="/kontak" className="flex flex-col items-center p-3 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-colors">
                 <span className="text-3xl mb-2">💬</span>
                 <span className="text-sm font-medium text-gray-700">Tanya Jawab</span>
               </Link>
@@ -106,7 +106,7 @@ export default function Home() {
                 <span className="text-3xl mb-2">📍</span>
                 <span className="text-sm font-medium text-gray-700">Lokasi</span>
               </Link>
-              <Link href="/kontak" className="flex flex-col items-center p-3 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+              <Link href="/kontak" className="flex flex-col items-center p-3 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-colors">
                 <span className="text-3xl mb-2">📞</span>
                 <span className="text-sm font-medium text-gray-700">Hubungi</span>
               </Link>
