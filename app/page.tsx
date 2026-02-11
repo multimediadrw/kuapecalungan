@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import MobileHeader from './components/MobileHeader';
 import FAQ from './components/FAQ';
+import ScrollReveal from './components/ScrollReveal';
 
 export default function Home() {
   const menuItems = [
@@ -143,47 +144,165 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Desktop View - Keep Original Design */}
-      <div className="hidden md:block min-h-screen">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-emerald-500 via-emerald-600 to-emerald-700 text-white py-20 px-4">
-          <div className="max-w-7xl mx-auto text-center">
-            <div className="mb-8">
-              <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center mx-auto mb-6 shadow-lg p-4">
-                <Image
-                  src="/logo-kemenag.png"
-                  alt="Logo Kementerian Agama"
-                  width={96}
-                  height={96}
-                  className="object-contain"
-                />
+      {/* Desktop View - Modern Design */}
+      <div className="hidden md:block min-h-screen bg-gradient-to-br from-gray-50 to-emerald-50">
+        {/* Hero Section - Modern Layout */}
+        <section className="min-h-screen flex items-center px-4 py-12">
+          <div className="max-w-7xl mx-auto w-full">
+            <div className="grid grid-cols-2 gap-12 items-center">
+              {/* Left Content */}
+              <div className="space-y-6 animate-fade-in">
+                {/* Badge */}
+                <div className="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 px-4 py-2 rounded-full border border-emerald-200">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-sm font-semibold">Terpercaya & Profesional</span>
+                </div>
+
+                {/* Main Heading */}
+                <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  Konsultasi Hukum Islam{' '}
+                  <span className="text-emerald-600">KUA Pecalungan</span>
+                </h1>
+
+                {/* Subtitle */}
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Tanya jawab fiqih dengan ulama berpengalaman berdasarkan Al-Qur'an dan Hadits.
+                </p>
+
+                {/* CTA Buttons */}
+                <div className="flex gap-4 pt-4">
+                  <Link
+                    href="/kontak"
+                    className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                  >
+                    Mulai Bertanya Sekarang
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </Link>
+                  <Link
+                    href="/fiqih"
+                    className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-emerald-600 border-2 border-emerald-600 px-6 py-3.5 rounded-lg font-semibold transition-all"
+                  >
+                    Lihat Materi Fiqih
+                  </Link>
+                </div>
+
+                {/* Info Card */}
+                <div className="inline-flex items-center gap-3 bg-white rounded-xl shadow-md p-4 border border-gray-100">
+                  <div className="bg-emerald-100 p-3 rounded-full">
+                    <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-bold text-gray-900">Respon Cepat</p>
+                    <p className="text-sm text-gray-600">Rata-rata 2-3 hari kerja</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Image */}
+              <div className="relative animate-fade-in">
+                <div className="relative bg-gradient-to-br from-amber-100 to-amber-200 rounded-3xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/ustadz-illustration.png"
+                    alt="Ilustrasi Ustadz"
+                    width={600}
+                    height={800}
+                    className="object-cover w-full h-auto"
+                    priority
+                  />
+                </div>
               </div>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Selamat Datang di KUA Pecalungan
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-emerald-50">
-              Tanya Jawab Fiqih Dasar & Layanan Keagamaan
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/fiqih"
-                className="bg-white text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-50 transition-colors shadow-lg"
-              >
-                Pelajari Fiqih
-              </Link>
-              <Link
-                href="/kontak"
-                className="bg-emerald-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-900 transition-colors shadow-lg"
-              >
-                Tanya Ustadz
-              </Link>
+          </div>
+        </section>
+
+        {/* How It Works Section */}
+        <section className="py-20 px-4 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Bagaimana Cara Menggunakan{' '}
+                <span className="text-emerald-600">Layanan Kami?</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Proses konsultasi yang mudah dan cepat untuk menjawab pertanyaan fiqih Anda
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Step 1 */}
+              <ScrollReveal delay={0}>
+                <div className="relative group">
+                  <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8 card-hover">
+                  <div className="bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto shadow-lg">
+                    1
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 text-center mb-3">
+                    Ajukan Pertanyaan
+                  </h3>
+                  <p className="text-gray-600 text-center">
+                    Kirim pertanyaan fiqih Anda melalui form kontak atau WhatsApp
+                  </p>
+                </div>
+                {/* Arrow */}
+                <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-emerald-300">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                </div>
+              </ScrollReveal>
+
+              {/* Step 2 */}
+              <ScrollReveal delay={100}>
+                <div className="relative group">
+                  <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8 card-hover">
+                  <div className="bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto shadow-lg">
+                    2
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 text-center mb-3">
+                    Ustadz Menjawab
+                  </h3>
+                  <p className="text-gray-600 text-center">
+                    Ustadz kami akan menjawab dengan rujukan Al-Qur'an dan Hadits
+                  </p>
+                </div>
+                {/* Arrow */}
+                <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-emerald-300">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                </div>
+              </ScrollReveal>
+
+              {/* Step 3 */}
+              <ScrollReveal delay={200}>
+                <div className="group">
+                  <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8 card-hover">
+                  <div className="bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto shadow-lg">
+                    3
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 text-center mb-3">
+                    Terima Jawaban
+                  </h3>
+                  <p className="text-gray-600 text-center">
+                    Dapatkan jawaban lengkap dalam 2-3 hari kerja
+                  </p>
+                </div>
+                </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
 
         {/* Features Section */}
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
               Layanan Kami
