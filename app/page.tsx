@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -7,8 +8,14 @@ export default function Home() {
       <section className="bg-gradient-to-br from-emerald-500 via-emerald-600 to-emerald-700 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-              <span className="text-emerald-600 font-bold text-4xl">K</span>
+            <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center mx-auto mb-6 shadow-lg p-4">
+              <Image
+                src="/logo-kemenag.png"
+                alt="Logo Kementerian Agama"
+                width={96}
+                height={96}
+                className="object-contain"
+              />
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">

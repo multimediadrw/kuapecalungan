@@ -6,6 +6,10 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "KUA Pecalungan - Tanya Jawab Fiqih",
   description: "Website resmi KUA Pecalungan untuk tanya jawab fiqih dasar dan informasi layanan",
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/logo-kemenag.png',
+  },
 };
 
 export default function RootLayout({

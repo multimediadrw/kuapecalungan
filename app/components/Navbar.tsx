@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -11,10 +12,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-              <span className="text-emerald-600 font-bold text-xl">K</span>
-            </div>
+          <Link href="/" className="flex items-center space-x-3">
+            <Image
+              src="/logo-kemenag.png"
+              alt="Logo Kementerian Agama"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
             <span className="text-white font-bold text-xl hidden sm:block">
               KUA Pecalungan
             </span>
