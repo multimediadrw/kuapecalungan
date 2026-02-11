@@ -49,7 +49,7 @@ export default function LokasiPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span className="font-medium">KUA Pecalungan, Batang</span>
+                <span className="font-medium">Jl. Raya Pecalungan, Batang</span>
               </div>
               <a
                 href="https://maps.app.goo.gl/gMUcFLTf6WBGyXbm9"
@@ -75,9 +75,7 @@ export default function LokasiPage() {
               <div>
                 <h2 className="text-2xl font-bold text-gray-800 mb-2">Alamat</h2>
                 <p className="text-gray-600">
-                  Jl. Raya Pecalungan No. 123<br />
-                  Pecalungan, Batang<br />
-                  Jawa Tengah 51281
+                  Jl. Raya Pecalungan, Batang
                 </p>
               </div>
             </div>
@@ -141,7 +139,7 @@ export default function LokasiPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:kuapecalungan15@gmail.com"
+              href="mailto:kua.pecalungan@kemenag.go.id"
               className="bg-white text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-50 transition-colors inline-flex items-center justify-center"
             >
               📧 Email Kami

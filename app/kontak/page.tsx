@@ -162,7 +162,7 @@ Terima kasih.`;
                   </svg>
                   <div>
                     <p className="font-semibold text-gray-800">Email</p>
-                    <a href="mailto:kuapecalungan15@gmail.com" className="text-emerald-600 hover:text-emerald-700 text-sm">kuapecalungan15@gmail.com</a>
+                    <a href="mailto:kua.pecalungan@kemenag.go.id" className="text-emerald-600 hover:text-emerald-700 text-sm">kua.pecalungan@kemenag.go.id</a>
                   </div>
                 </div>
 
@@ -181,12 +181,21 @@ Terima kasih.`;
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
+  <div>
+                    <p className="font-semibold text-gray-800">Telepon</p>
+                    <a href="tel:0284123456" className="text-emerald-600 hover:text-emerald-700 text-sm">(0284) 123456</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
                   <div>
                     <p className="font-semibold text-gray-800">Alamat</p>
                     <p className="text-gray-600 text-sm">
-                      Jl. Raya Pecalungan No. 123<br />
-                      Pecalungan, Batang<br />
-                      Jawa Tengah 51281
+                      Jl. Raya Pecalungan, Batang
                     </p>
                   </div>
                 </div>
