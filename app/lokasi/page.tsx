@@ -57,15 +57,7 @@ export default function LokasiPage() {
               </div>
             </div>
 
-            <div className="border-t pt-6">
-              <h3 className="font-bold text-gray-800 mb-3">Cara Menuju Lokasi:</h3>
-              <ul className="space-y-2 text-gray-600 text-sm">
-                <li>• Dari Terminal Batang: ±15 menit berkendara</li>
-                <li>• Dari Stasiun Batang: ±20 menit berkendara</li>
-                <li>• Dekat dengan Pasar Pecalungan</li>
-                <li>• Tersedia area parkir yang luas</li>
-              </ul>
-            </div>
+
           </div>
 
           {/* Operating Hours Card */}
