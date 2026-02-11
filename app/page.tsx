@@ -205,13 +205,13 @@ export default function Home() {
               </div>
 
               {/* Right Image */}
-              <div className="relative animate-fade-in">
-                <div className="relative bg-gradient-to-br from-amber-100 to-amber-200 rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative animate-fade-in flex items-center justify-center">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl max-w-md">
                   <Image
-                    src="/ustadz-illustration.png"
-                    alt="Ilustrasi Ustadz"
-                    width={600}
-                    height={800}
+                    src="/hero-konsultasi.png"
+                    alt="Konsultasi KUA Pecalungan"
+                    width={500}
+                    height={350}
                     className="object-cover w-full h-auto"
                     priority
                   />
