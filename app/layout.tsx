@@ -72,8 +72,7 @@ export const metadata: Metadata = {
     images: ['/logo-kemenag.png'],
   },
   verification: {
-    // Ganti dengan verification code dari Google Search Console
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
+    google: 'Ea90g1L0sRc565eUNa9i0EEHbgYqLoff9cgVF2LuH4Q',
   },
   alternates: {
     canonical: 'https://kuapecalungan.vercel.app',
