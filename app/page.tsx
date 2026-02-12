@@ -1,8 +1,11 @@
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
 import MobileHeader from './components/MobileHeader';
 import FAQ from './components/FAQ';
 import ScrollReveal from './components/ScrollReveal';
+import IslamicPattern from './components/IslamicPattern';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   const menuItems = [
@@ -145,9 +148,19 @@ export default function Home() {
       </div>
 
       {/* Desktop View - Modern Design */}
-      <div className="hidden md:block min-h-screen bg-gradient-to-br from-emerald-50 via-white to-emerald-100">
-        {/* Hero Section - Modern Layout */}
-        <section className="min-h-screen flex items-center px-4 py-12 bg-gradient-to-r from-emerald-50/80 to-transparent">
+      <div className="hidden md:block min-h-screen bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-900">
+        {/* Hero Section - Modern Layout with Islamic Pattern */}
+        <section className="relative min-h-screen flex items-center px-4 py-12 overflow-hidden">
+          {/* Islamic Pattern Background */}
+          <div className="absolute inset-0 text-emerald-700">
+            <IslamicPattern />
+          </div>
+          
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/95 via-emerald-800/90 to-emerald-900/95"></div>
+          
+          {/* Content Container */}
+          <div className="relative z-10 w-full">
           <div className="max-w-7xl mx-auto w-full">
             <div className="grid grid-cols-2 gap-12 items-center">
               {/* Left Content */}
