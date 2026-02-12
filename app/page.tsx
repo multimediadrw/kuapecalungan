@@ -148,16 +148,11 @@ export default function Home() {
       </div>
 
       {/* Desktop View - Modern Design */}
-      <div className="hidden md:block min-h-screen bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-900">
-        {/* Hero Section - Modern Layout with Islamic Pattern */}
+      <div className="hidden md:block min-h-screen bg-gradient-to-br from-emerald-50 via-white to-emerald-100">
+        {/* Hero Section - Modern Layout */}
         <section className="relative min-h-screen flex items-center px-4 py-12 overflow-hidden">
-          {/* Islamic Pattern Background */}
-          <div className="absolute inset-0 text-emerald-700">
-            <IslamicPattern />
-          </div>
-          
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/95 via-emerald-800/90 to-emerald-900/95"></div>
+          {/* Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-r from-emerald-50/80 to-transparent"></div>
           
           {/* Content Container */}
           <div className="relative z-10 w-full">

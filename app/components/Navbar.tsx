@@ -56,18 +56,8 @@ export default function Navbar() {
               >
                 <span className="relative z-10">{item.label}</span>
                 <span className="absolute inset-0 bg-emerald-700 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
-              </Link>
-            ))}
-            
-            {/* CTA Button */}
-            <motion.a
-              href="/kontak"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="ml-4 px-6 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
-            >
-              Konsultasi Gratis
-            </motion.a>
+                   ))
+            }}>
           </div>
 
           {/* Mobile menu button */}
