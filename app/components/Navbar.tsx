@@ -56,8 +56,8 @@ export default function Navbar() {
               >
                 <span className="relative z-10">{item.label}</span>
                 <span className="absolute inset-0 bg-emerald-700 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
-                   ))
-            }}>
+              </Link>
+            ))}
           </div>
 
           {/* Mobile menu button */}
