@@ -47,6 +47,68 @@ export default function ZakatPage() {
           </div>
         </section>
 
+        {/* Dalil dan Hadits */}
+        <section className="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          
+          {/* Ayat Al-Qur'an */}
+          <div className="mb-6">
+            <div className="bg-emerald-50 border-l-4 border-emerald-600 p-5 rounded-lg mb-3">
+              <p className="text-right text-2xl leading-loose mb-4 font-arabic text-gray-800">
+                وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ
+              </p>
+              <p className="text-sm text-emerald-700 font-semibold mb-2">QS. Al-Baqarah (2): 110</p>
+              <p className="text-gray-700 leading-relaxed">
+                "Dan dirikanlah shalat dan tunaikanlah zakat. Dan segala kebaikan yang kamu kerjakan untuk dirimu, kamu akan mendapatkannya di sisi Allah."
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 1 */}
+          <div className="mb-6">
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Bukhari & Muslim</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                مَا نَقَصَ مَالُ عَبْدٍ مِنْ صَدَقَةٍ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Maa naqasha maalu 'abdin min shadaqah"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Harta seorang hamba tidak akan berkurang karena sedekah."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Muslim no. 2588 dan Tirmidzi no. 2029 (Shahih)
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 2 */}
+          <div className="mb-6">
+            <div className="bg-amber-50 border-l-4 border-amber-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Bukhari</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                مَنْ آتَاهُ اللَّهُ مَالًا فَلَمْ يُؤَدِّ زَكَاتَهُ مُثِّلَ لَهُ مَالُهُ يَوْمَ الْقِيَامَةِ شُجَاعًا أَقْرَعَ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Man aataahullahu maalan falam yu'addi zakaatahu mutstsila lahu maaluhu yaumal qiyaamati syujaa'an aqra'a"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Barangsiapa yang Allah berikan harta kepadanya namun ia tidak menunaikan zakatnya, maka pada hari kiamat hartanya akan diwujudkan menjadi ular berbisa yang melilit lehernya."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Bukhari no. 1403
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Macam-macam Zakat */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">📋 Macam-macam Zakat</h2>

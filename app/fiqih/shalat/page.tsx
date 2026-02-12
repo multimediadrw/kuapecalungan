@@ -46,6 +46,90 @@ export default function ShalatPage() {
           </div>
         </section>
 
+        {/* Dalil dan Hadits */}
+        <section className="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          
+          {/* Ayat Al-Qur'an 1 */}
+          <div className="mb-6">
+            <div className="bg-emerald-50 border-l-4 border-emerald-600 p-5 rounded-lg mb-3">
+              <p className="text-right text-2xl leading-loose mb-4 font-arabic text-gray-800">
+                وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱرْكَعُوا۟ مَعَ ٱلرَّٰكِعِينَ
+              </p>
+              <p className="text-sm text-emerald-700 font-semibold mb-2">QS. Al-Baqarah (2): 43</p>
+              <p className="text-gray-700 leading-relaxed">
+                "Dan dirikanlah shalat, tunaikanlah zakat, dan ruku'lah bersama orang-orang yang ruku'."
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 1 */}
+          <div className="mb-6">
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Bukhari & Muslim</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                الصَّلَاةُ عِمَادُ الدِّينِ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Ash-shalaatu 'imaadud diin"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Shalat adalah tiang agama."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Thabrani dalam Al-Mu'jam Al-Ausath no. 2937
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 2 */}
+          <div className="mb-6">
+            <div className="bg-amber-50 border-l-4 border-amber-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Muslim</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                بَيْنَ الرَّجُلِ وَبَيْنَ الْكُفْرِ تَرْكُ الصَّلَاةِ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Bainar rajuli wa bainal kufri tarkush shalaah"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Pembatas antara seorang muslim dengan kekufuran adalah meninggalkan shalat."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Muslim no. 82
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 3 */}
+          <div className="mb-6">
+            <div className="bg-purple-50 border-l-4 border-purple-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Bukhari & Muslim</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                أَوَّلُ مَا يُحَاسَبُ بِهِ الْعَبْدُ يَوْمَ الْقِيَامَةِ الصَّلَاةُ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Awwalu maa yuhaasabu bihil 'abdu yaumal qiyaamati ash-shalaah"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Perkara pertama yang akan dihisab dari seorang hamba pada hari kiamat adalah shalat."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Abu Dawud no. 864, Tirmidzi no. 413, dan Nasa'i no. 465 (Shahih)
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Syarat Wajib Shalat */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">📋 Syarat Wajib Shalat</h2>

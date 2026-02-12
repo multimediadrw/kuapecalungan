@@ -44,6 +44,68 @@ export default function HajiUmrahPage() {
           </div>
         </section>
 
+        {/* Dalil dan Hadits */}
+        <section className="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          
+          {/* Ayat Al-Qur'an */}
+          <div className="mb-6">
+            <div className="bg-emerald-50 border-l-4 border-emerald-600 p-5 rounded-lg mb-3">
+              <p className="text-right text-2xl leading-loose mb-4 font-arabic text-gray-800">
+                وَلِلَّهِ عَلَى ٱلنَّاسِ حِجُّ ٱلْبَيْتِ مَنِ ٱسْتَطَاعَ إِلَيْهِ سَبِيلًا
+              </p>
+              <p className="text-sm text-emerald-700 font-semibold mb-2">QS. Ali Imran (3): 97</p>
+              <p className="text-gray-700 leading-relaxed">
+                "Dan (di antara) kewajiban manusia terhadap Allah adalah melaksanakan ibadah haji ke Baitullah, yaitu bagi orang-orang yang mampu mengadakan perjalanan ke sana."
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 1 */}
+          <div className="mb-6">
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Bukhari & Muslim</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                مَنْ حَجَّ لِلَّهِ فَلَمْ يَرْفُثْ وَلَمْ يَفْسُقْ رَجَعَ كَيَوْمِ وَلَدَتْهُ أُمُّهُ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Man hajja lillahi falam yarfuts walam yafsuk raja'a kayaumi waladathu ummuhu"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Barangsiapa berhaji karena Allah, tidak berkata rafats (kotor) dan tidak berbuat fasik, maka ia kembali (bersih dari dosa) seperti hari dilahirkan ibunya."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Bukhari no. 1521 dan Muslim no. 1350
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 2 */}
+          <div className="mb-6">
+            <div className="bg-amber-50 border-l-4 border-amber-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Bukhari & Muslim</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                الْحَجُّ الْمَبْرُورُ لَيْسَ لَهُ جَزَاءٌ إِلَّا الْجَنَّةُ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Al-hajjul mabruuru laisa lahu jazaa'un illal jannah"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Haji mabrur tidak ada balasan baginya kecuali surga."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Bukhari no. 1773 dan Muslim no. 1349
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Syarat Wajib Haji */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">📋 Syarat Wajib Haji</h2>

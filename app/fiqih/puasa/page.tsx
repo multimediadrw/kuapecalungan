@@ -46,6 +46,68 @@ export default function PuasaPage() {
           </div>
         </section>
 
+        {/* Dalil dan Hadits */}
+        <section className="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          
+          {/* Ayat Al-Qur'an */}
+          <div className="mb-6">
+            <div className="bg-emerald-50 border-l-4 border-emerald-600 p-5 rounded-lg mb-3">
+              <p className="text-right text-2xl leading-loose mb-4 font-arabic text-gray-800">
+                يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُتِبَ عَلَيْكُمُ ٱلصِّيَامُ كَمَا كُتِبَ عَلَى ٱلَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ
+              </p>
+              <p className="text-sm text-emerald-700 font-semibold mb-2">QS. Al-Baqarah (2): 183</p>
+              <p className="text-gray-700 leading-relaxed">
+                "Wahai orang-orang yang beriman! Diwajibkan atas kamu berpuasa sebagaimana diwajibkan atas orang sebelum kamu agar kamu bertakwa."
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 1 */}
+          <div className="mb-6">
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Bukhari & Muslim</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                مَنْ صَامَ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Man shaama ramadhana imaanan wahtisaaban ghufira lahu maa taqaddama min dzanbihi"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Barangsiapa berpuasa Ramadhan karena iman dan mengharap pahala dari Allah, maka diampuni dosa-dosanya yang telah lalu."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Bukhari no. 38 dan Muslim no. 760
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 2 */}
+          <div className="mb-6">
+            <div className="bg-amber-50 border-l-4 border-amber-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Bukhari & Muslim</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                إِذَا جَاءَ رَمَضَانُ فُتِّحَتْ أَبْوَابُ الْجَنَّةِ وَغُلِّقَتْ أَبْوَابُ النَّارِ وَصُفِّدَتِ الشَّيَاطِينُ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Idzaa jaa'a ramadhanu futtihat abwaabul jannati wa ghuliqat abwaabun naari wa shuffidatisy syayaathiin"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Apabila datang bulan Ramadhan, maka dibukakan pintu-pintu surga, ditutup pintu-pintu neraka, dan setan-setan dibelenggu."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Bukhari no. 1899 dan Muslim no. 1079
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Syarat Wajib Puasa */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">📋 Syarat Wajib Puasa</h2>

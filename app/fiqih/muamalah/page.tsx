@@ -45,6 +45,90 @@ export default function MuamalahPage() {
           </div>
         </section>
 
+        {/* Dalil dan Hadits */}
+        <section className="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          
+          {/* Ayat Al-Qur'an */}
+          <div className="mb-6">
+            <div className="bg-emerald-50 border-l-4 border-emerald-600 p-5 rounded-lg mb-3">
+              <p className="text-right text-2xl leading-loose mb-4 font-arabic text-gray-800">
+                وَأَحَلَّ ٱللَّهُ ٱلْبَيْعَ وَحَرَّمَ ٱلرِّبَوٰا۟
+              </p>
+              <p className="text-sm text-emerald-700 font-semibold mb-2">QS. Al-Baqarah (2): 275</p>
+              <p className="text-gray-700 leading-relaxed">
+                "Allah telah menghalalkan jual beli dan mengharamkan riba."
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 1 */}
+          <div className="mb-6">
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Bukhari</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                الْبَيِّعَانِ بِالْخِيَارِ مَا لَمْ يَتَفَرَّقَا
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Al-bayyi'aani bil khiyaari maa lam yatafarraqaa"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Penjual dan pembeli berhak khiyar (memilih melanjutkan atau membatalkan) selama keduanya belum berpisah."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Bukhari no. 2111 dan Muslim no. 1531
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 2 */}
+          <div className="mb-6">
+            <div className="bg-amber-50 border-l-4 border-amber-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Tirmidzi</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                إِنَّمَا الْبَيْعُ عَنْ تَرَاضٍ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "Innamal bay'u 'an taraadhiin"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Sesungguhnya jual beli itu harus dengan saling ridha (rela)."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Ibnu Majah no. 2185 dan dishahihkan oleh Al-Albani
+              </p>
+            </div>
+          </div>
+
+          {/* Hadits 3 - Riba */}
+          <div className="mb-6">
+            <div className="bg-red-50 border-l-4 border-red-600 p-5 rounded-lg">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Hadits Shahih</span>
+                <span className="text-sm text-gray-600">HR. Muslim</span>
+              </div>
+              <p className="text-right text-xl leading-loose mb-4 font-arabic text-gray-800">
+                لَعَنَ اللَّهُ آكِلَ الرِّبَا وَمُؤْكِلَهُ وَكَاتِبَهُ وَشَاهِدَيْهِ
+              </p>
+              <p className="text-gray-700 leading-relaxed italic mb-2">
+                "La'anallahu aakilar ribaa wa mu'kilahu wa kaatibahu wa syaahidayhi"
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                <strong>Artinya:</strong> "Allah melaknat pemakan riba, yang memberi makan riba, penulisnya, dan dua saksinya."
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
+                📚 <strong>Sumber:</strong> HR. Muslim no. 1598
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Jual Beli */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">🛒 Jual Beli (Ba'i)</h2>
