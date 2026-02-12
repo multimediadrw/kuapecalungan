@@ -232,6 +232,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </div>
         </section>
 
         {/* How It Works Section */}
