@@ -145,9 +145,9 @@ export default function Home() {
       </div>
 
       {/* Desktop View - Modern Design */}
-      <div className="hidden md:block min-h-screen bg-gradient-to-br from-gray-50 to-emerald-50">
+      <div className="hidden md:block min-h-screen bg-gradient-to-br from-emerald-50 via-white to-emerald-100">
         {/* Hero Section - Modern Layout */}
-        <section className="min-h-screen flex items-center px-4 py-12">
+        <section className="min-h-screen flex items-center px-4 py-12 bg-gradient-to-r from-emerald-50/80 to-transparent">
           <div className="max-w-7xl mx-auto w-full">
             <div className="grid grid-cols-2 gap-12 items-center">
               {/* Left Content */}
