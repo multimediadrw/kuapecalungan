@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    url: 'https://kuapecalungan.vercel.app',
+    url: 'https://kuapecalungan-nine.vercel.app',
     title: 'KUA Pecalungan - Tanya Jawab Fiqih Dasar',
     description: 'Website resmi KUA Pecalungan untuk konsultasi fiqih dasar, informasi layanan nikah, dan bimbingan keluarga sakinah. Layanan gratis dan terpercaya.',
     siteName: 'KUA Pecalungan',
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     google: 'Ea90g1L0sRc565eUNa9i0EEHbgYqLoff9cgVF2LuH4Q',
   },
   alternates: {
-    canonical: 'https://kuapecalungan.vercel.app',
+    canonical: 'https://kuapecalungan-nine.vercel.app',
   },
 };
 
