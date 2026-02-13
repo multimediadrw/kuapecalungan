@@ -3,9 +3,8 @@
 import Script from 'next/script';
 
 export default function GoogleAnalytics() {
-  // Ganti dengan Google Analytics Measurement ID Anda
-  // Format: G-XXXXXXXXXX
-  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || '';
+  // Google Analytics Measurement ID
+  const GA_MEASUREMENT_ID = 'G-18HJ1ZF6PQ';
 
   // Jika belum ada GA ID, tidak render script
   if (!GA_MEASUREMENT_ID) {
