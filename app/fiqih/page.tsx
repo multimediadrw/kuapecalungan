@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { Droplet, Mosque, Moon, Coins, Landmark, Handshake, Lightbulb } from 'lucide-react';
+import { Droplet, Church, Moon, Coins, Landmark, Handshake, Lightbulb } from 'lucide-react';
 
 const fiqihCategories = [
   {
@@ -15,7 +15,7 @@ const fiqihCategories = [
     title: 'Shalat',
     slug: 'shalat',
     description: 'Panduan lengkap tentang shalat lima waktu, shalat sunnah, dan tata caranya',
-    icon: <Mosque className="w-12 h-12 text-emerald-600" />,
+    icon: <Church className="w-12 h-12 text-emerald-600" />,
   },
   {
     id: 3,
