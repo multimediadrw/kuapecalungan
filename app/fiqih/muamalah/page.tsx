@@ -1,3 +1,5 @@
+import { 1, 2, 3, 4, 5, 6, 7, 8, AlertTriangle, BookOpen, CheckCircle, FileText, Handshake, Library, Mosque, Target } from 'lucide-react';
+
 import Link from 'next/link';
 
 export default function MuamalahPage() {
@@ -32,7 +34,7 @@ export default function MuamalahPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Pengertian */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">🤝 Pengertian Muamalah</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><Handshake className="w-6 h-6 text-emerald-600" /> Pengertian Muamalah</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Muamalah adalah aturan-aturan Allah SWT yang mengatur hubungan antar manusia dalam urusan duniawi, 
             seperti jual beli, hutang piutang, sewa menyewa, dan transaksi ekonomi lainnya.
@@ -47,7 +49,7 @@ export default function MuamalahPage() {
 
         {/* Dalil dan Hadits */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><BookOpen className="w-6 h-6 text-emerald-600" /> Dalil Al-Qur'an dan Hadits</h2>
           
           {/* Ayat Al-Qur'an */}
           <div className="mb-6">
@@ -79,7 +81,7 @@ export default function MuamalahPage() {
                 <strong>Artinya:</strong> "Penjual dan pembeli berhak khiyar (memilih melanjutkan atau membatalkan) selama keduanya belum berpisah."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Bukhari no. 2111 dan Muslim no. 1531
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Bukhari no. 2111 dan Muslim no. 1531
               </p>
             </div>
           </div>
@@ -101,7 +103,7 @@ export default function MuamalahPage() {
                 <strong>Artinya:</strong> "Sesungguhnya jual beli itu harus dengan saling ridha (rela)."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Ibnu Majah no. 2185 dan dishahihkan oleh Al-Albani
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Ibnu Majah no. 2185 dan dishahihkan oleh Al-Albani
               </p>
             </div>
           </div>
@@ -123,7 +125,7 @@ export default function MuamalahPage() {
                 <strong>Artinya:</strong> "Allah melaknat pemakan riba, yang memberi makan riba, penulisnya, dan dua saksinya."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Muslim no. 1598
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Muslim no. 1598
               </p>
             </div>
           </div>
@@ -170,7 +172,7 @@ export default function MuamalahPage() {
 
         {/* Riba */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">⚠️ Riba</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><AlertTriangle className="w-6 h-6 text-emerald-600" /> Riba</h2>
           <p className="text-gray-700 mb-4">
             Riba adalah pengambilan tambahan dari harta pokok atau modal secara batil. Riba adalah dosa besar 
             yang sangat diharamkan dalam Islam.
@@ -213,7 +215,7 @@ export default function MuamalahPage() {
           </div>
 
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded">
-            <h3 className="font-bold text-gray-800 mb-2">📝 Adab Hutang Piutang</h3>
+            <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2"><FileText className="w-5 h-5 text-emerald-600" /> Adab Hutang Piutang</h3>
             <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4 text-sm">
               <li>Ditulis dan disaksikan</li>
               <li>Niat baik untuk mengembalikan</li>
@@ -255,7 +257,7 @@ export default function MuamalahPage() {
 
         {/* Syirkah */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">🤝 Kerjasama (Syirkah)</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><Handshake className="w-6 h-6 text-emerald-600" /> Kerjasama (Syirkah)</h2>
           <p className="text-gray-700 mb-4">
             Syirkah adalah akad kerjasama antara dua orang atau lebih dalam suatu usaha dengan kesepakatan pembagian keuntungan.
           </p>
@@ -288,7 +290,7 @@ export default function MuamalahPage() {
           <h2 className="text-2xl font-bold text-gray-800 mb-4">⭐ Prinsip Ekonomi Islam</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-emerald-50 p-4 rounded">
-              <h3 className="font-bold text-gray-800 mb-2">✅ Yang Dianjurkan</h3>
+              <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2"><CheckCircle className="w-5 h-5 text-emerald-600" /> Yang Dianjurkan</h3>
               <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm ml-4">
                 <li>Jujur dalam transaksi</li>
                 <li>Adil dalam timbangan</li>

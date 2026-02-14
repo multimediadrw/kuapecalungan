@@ -1,3 +1,5 @@
+import { MapPin, Clock, Mail, MessageCircle } from 'lucide-react';
+
 export default function LokasiPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4">
@@ -71,7 +73,7 @@ export default function LokasiPage() {
           {/* Address Card */}
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="flex items-start space-x-4 mb-6">
-              <div className="text-4xl">📍</div>
+              <MapPin className="w-10 h-10 text-emerald-600 flex-shrink-0" />
               <div>
                 <h2 className="text-2xl font-bold text-gray-800 mb-2">Alamat</h2>
                 <p className="text-gray-600">
@@ -88,7 +90,7 @@ export default function LokasiPage() {
           {/* Operating Hours Card */}
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="flex items-start space-x-4 mb-6">
-              <div className="text-4xl">🕐</div>
+              <Clock className="w-10 h-10 text-emerald-600 flex-shrink-0" />
               <div>
                 <h2 className="text-2xl font-bold text-gray-800 mb-2">Jam Pelayanan</h2>
               </div>
@@ -144,7 +146,7 @@ export default function LokasiPage() {
               href="mailto:kua.pecalungan@kemenag.go.id"
               className="bg-white text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-50 transition-colors inline-flex items-center justify-center"
             >
-              📧 Email Kami
+              <Mail className="w-5 h-5 mr-2" /> Email Kami
             </a>
             <a
               href="https://wa.me/6285117737315"
@@ -152,7 +154,7 @@ export default function LokasiPage() {
               rel="noopener noreferrer"
               className="bg-emerald-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-900 transition-colors inline-flex items-center justify-center"
             >
-              💬 WhatsApp
+              <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp
             </a>
           </div>
         </div>

@@ -1,3 +1,5 @@
+import { AlertTriangle, BookOpen, CheckCircle, Library, Mosque, Target } from 'lucide-react';
+
 import Link from 'next/link';
 
 export default function ShalatPage() {
@@ -33,7 +35,7 @@ export default function ShalatPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Pengertian */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">🕌 Pengertian Shalat</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><Mosque className="w-6 h-6 text-emerald-600" /> Pengertian Shalat</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Shalat secara bahasa berarti doa. Sedangkan secara istilah syariat, shalat adalah ibadah yang 
             tersusun dari beberapa perkataan dan perbuatan yang dimulai dengan takbir dan diakhiri dengan salam, 
@@ -48,7 +50,7 @@ export default function ShalatPage() {
 
         {/* Dalil dan Hadits */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><BookOpen className="w-6 h-6 text-emerald-600" /> Dalil Al-Qur'an dan Hadits</h2>
           
           {/* Ayat Al-Qur'an 1 */}
           <div className="mb-6">
@@ -80,7 +82,7 @@ export default function ShalatPage() {
                 <strong>Artinya:</strong> "Shalat adalah tiang agama."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Thabrani dalam Al-Mu'jam Al-Ausath no. 2937
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Thabrani dalam Al-Mu'jam Al-Ausath no. 2937
               </p>
             </div>
           </div>
@@ -102,7 +104,7 @@ export default function ShalatPage() {
                 <strong>Artinya:</strong> "Pembatas antara seorang muslim dengan kekufuran adalah meninggalkan shalat."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Muslim no. 82
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Muslim no. 82
               </p>
             </div>
           </div>
@@ -124,7 +126,7 @@ export default function ShalatPage() {
                 <strong>Artinya:</strong> "Perkara pertama yang akan dihisab dari seorang hamba pada hari kiamat adalah shalat."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Abu Dawud no. 864, Tirmidzi no. 413, dan Nasa'i no. 465 (Shahih)
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Abu Dawud no. 864, Tirmidzi no. 413, dan Nasa'i no. 465 (Shahih)
               </p>
             </div>
           </div>
@@ -144,7 +146,7 @@ export default function ShalatPage() {
 
         {/* Syarat Sah Shalat */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">✅ Syarat Sah Shalat (9 Syarat)</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><CheckCircle className="w-6 h-6 text-emerald-600" /> Syarat Sah Shalat (9 Syarat)</h2>
           <ol className="list-decimal list-inside text-gray-700 space-y-2">
             <li><strong>Suci dari hadats kecil dan besar</strong> - Sudah berwudhu atau mandi wajib</li>
             <li><strong>Suci badan dari najis</strong></li>
@@ -160,7 +162,7 @@ export default function ShalatPage() {
 
         {/* Rukun Shalat */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">🎯 Rukun Shalat (13 Rukun)</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><Target className="w-6 h-6 text-emerald-600" /> Rukun Shalat (13 Rukun)</h2>
           <ol className="list-decimal list-inside text-gray-700 space-y-3">
             <li><strong>Niat</strong> - Di dalam hati sesuai shalat yang dikerjakan</li>
             <li><strong>Berdiri bagi yang mampu</strong> - Dalam shalat fardhu</li>
@@ -212,7 +214,7 @@ export default function ShalatPage() {
 
         {/* Hal yang Membatalkan Shalat */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">⚠️ Hal yang Membatalkan Shalat</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><AlertTriangle className="w-6 h-6 text-emerald-600" /> Hal yang Membatalkan Shalat</h2>
           <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
             <li>Berbicara dengan sengaja (selain bacaan shalat)</li>
             <li>Bergerak banyak yang tidak ada hubungannya dengan shalat</li>

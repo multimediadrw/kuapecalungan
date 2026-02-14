@@ -1,3 +1,5 @@
+import { Mail, Phone, MapPin } from 'lucide-react';
+
 export default function Footer() {
   return (
     <footer className="bg-emerald-800 text-white mt-auto">
@@ -42,9 +44,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Hubungi Kami</h3>
             <ul className="space-y-2 text-sm text-emerald-100">
-              <li>📧 kua.pecalungan@kemenag.go.id</li>
-              <li>📞 (0284) 123456</li>
-              <li>📍 Jl. Raya Pecalungan, Batang</li>
+              <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> kua.pecalungan@kemenag.go.id</li>
+              <li className="flex items-center gap-2"><Phone className="w-4 h-4" /> (0284) 123456</li>
+              <li className="flex items-center gap-2"><MapPin className="w-4 h-4" /> Jl. Raya Pecalungan, Batang</li>
             </ul>
           </div>
         </div>

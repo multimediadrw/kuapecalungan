@@ -1,3 +1,5 @@
+import { 1, 2, 3, 4, 5, 6, 7, 8, AlertTriangle, BookOpen, CheckCircle, FileText, Handshake, Library, Mosque, Mountain, Target } from 'lucide-react';
+
 import Link from 'next/link';
 
 export default function ThaharohPage() {
@@ -48,7 +50,7 @@ export default function ThaharohPage() {
 
         {/* Dalil dan Hadits */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><BookOpen className="w-6 h-6 text-emerald-600" /> Dalil Al-Qur'an dan Hadits</h2>
           
           {/* Ayat Al-Qur'an */}
           <div className="mb-6">
@@ -80,7 +82,7 @@ export default function ThaharohPage() {
                 <strong>Artinya:</strong> "Allah tidak menerima shalat salah seorang di antara kalian yang berhadats (batal wudhu) hingga ia berwudhu."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Bukhari no. 135 dan Muslim no. 225
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Bukhari no. 135 dan Muslim no. 225
               </p>
             </div>
           </div>
@@ -102,7 +104,7 @@ export default function ThaharohPage() {
                 <strong>Artinya:</strong> "Bersuci adalah separuh dari iman."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Muslim no. 223
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Muslim no. 223
               </p>
             </div>
           </div>
@@ -174,7 +176,7 @@ export default function ThaharohPage() {
           </div>
 
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded">
-            <h3 className="text-lg font-bold text-gray-800 mb-2">⚠️ Hal yang Membatalkan Wudhu</h3>
+            <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center gap-2"><AlertTriangle className="w-5 h-5 text-emerald-600" /> Hal yang Membatalkan Wudhu</h3>
             <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
               <li>Keluar sesuatu dari qubul atau dubur (kencing, buang air besar, kentut)</li>
               <li>Hilang akal (tidur nyenyak, pingsan, mabuk, gila)</li>
@@ -213,7 +215,7 @@ export default function ThaharohPage() {
 
         {/* Tayammum */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">🏜️ Tayammum</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><Mountain className="w-6 h-6 text-emerald-600" /> Tayammum</h2>
           
           <p className="text-gray-700 mb-4">
             Tayammum adalah bersuci menggunakan debu yang suci sebagai pengganti wudhu atau mandi wajib 

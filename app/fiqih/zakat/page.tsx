@@ -1,3 +1,5 @@
+import { 1, 2, 3, 4, 5, 6, 7, 8, AlertTriangle, BookOpen, CheckCircle, Library, Mosque, Target } from 'lucide-react';
+
 import Link from 'next/link';
 
 export default function ZakatPage() {
@@ -49,7 +51,7 @@ export default function ZakatPage() {
 
         {/* Dalil dan Hadits */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><BookOpen className="w-6 h-6 text-emerald-600" /> Dalil Al-Qur'an dan Hadits</h2>
           
           {/* Ayat Al-Qur'an */}
           <div className="mb-6">
@@ -81,7 +83,7 @@ export default function ZakatPage() {
                 <strong>Artinya:</strong> "Harta seorang hamba tidak akan berkurang karena sedekah."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Muslim no. 2588 dan Tirmidzi no. 2029 (Shahih)
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Muslim no. 2588 dan Tirmidzi no. 2029 (Shahih)
               </p>
             </div>
           </div>
@@ -103,7 +105,7 @@ export default function ZakatPage() {
                 <strong>Artinya:</strong> "Barangsiapa yang Allah berikan harta kepadanya namun ia tidak menunaikan zakatnya, maka pada hari kiamat hartanya akan diwujudkan menjadi ular berbisa yang melilit lehernya."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Bukhari no. 1403
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Bukhari no. 1403
               </p>
             </div>
           </div>
@@ -185,7 +187,7 @@ export default function ZakatPage() {
 
         {/* Syarat Wajib Zakat */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">✅ Syarat Wajib Zakat Mal</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><CheckCircle className="w-6 h-6 text-emerald-600" /> Syarat Wajib Zakat Mal</h2>
           <ol className="list-decimal list-inside text-gray-700 space-y-2">
             <li><strong>Islam</strong> - Beragama Islam</li>
             <li><strong>Merdeka</strong> - Bukan budak</li>
@@ -202,7 +204,7 @@ export default function ZakatPage() {
           <h2 className="text-2xl font-bold text-gray-800 mb-4">👥 8 Golongan Penerima Zakat (Asnaf)</h2>
           <div className="space-y-3">
             <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded">
-              <span className="text-2xl">1️⃣</span>
+              <span className="flex items-center justify-center w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full font-bold text-lg">1</span>
               <div>
                 <h3 className="font-bold text-gray-800">Fakir</h3>
                 <p className="text-gray-700 text-sm">Orang yang tidak memiliki harta dan tidak mampu bekerja</p>
@@ -210,7 +212,7 @@ export default function ZakatPage() {
             </div>
 
             <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded">
-              <span className="text-2xl">2️⃣</span>
+              <span className="flex items-center justify-center w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full font-bold text-lg">2</span>
               <div>
                 <h3 className="font-bold text-gray-800">Miskin</h3>
                 <p className="text-gray-700 text-sm">Orang yang memiliki harta namun tidak mencukupi kebutuhan</p>
@@ -218,7 +220,7 @@ export default function ZakatPage() {
             </div>
 
             <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded">
-              <span className="text-2xl">3️⃣</span>
+              <span className="flex items-center justify-center w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full font-bold text-lg">3</span>
               <div>
                 <h3 className="font-bold text-gray-800">Amil</h3>
                 <p className="text-gray-700 text-sm">Orang yang bertugas mengumpulkan dan mendistribusikan zakat</p>
@@ -226,7 +228,7 @@ export default function ZakatPage() {
             </div>
 
             <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded">
-              <span className="text-2xl">4️⃣</span>
+              <span className="flex items-center justify-center w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full font-bold text-lg">4</span>
               <div>
                 <h3 className="font-bold text-gray-800">Muallaf</h3>
                 <p className="text-gray-700 text-sm">Orang yang baru masuk Islam dan perlu dikuatkan imannya</p>
@@ -234,7 +236,7 @@ export default function ZakatPage() {
             </div>
 
             <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded">
-              <span className="text-2xl">5️⃣</span>
+              <span className="flex items-center justify-center w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full font-bold text-lg">5</span>
               <div>
                 <h3 className="font-bold text-gray-800">Riqab (Budak)</h3>
                 <p className="text-gray-700 text-sm">Budak yang ingin memerdekakan dirinya</p>
@@ -242,7 +244,7 @@ export default function ZakatPage() {
             </div>
 
             <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded">
-              <span className="text-2xl">6️⃣</span>
+              <span className="flex items-center justify-center w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full font-bold text-lg">6</span>
               <div>
                 <h3 className="font-bold text-gray-800">Gharim</h3>
                 <p className="text-gray-700 text-sm">Orang yang berhutang untuk kepentingan yang baik</p>
@@ -250,7 +252,7 @@ export default function ZakatPage() {
             </div>
 
             <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded">
-              <span className="text-2xl">7️⃣</span>
+              <span className="flex items-center justify-center w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full font-bold text-lg">7</span>
               <div>
                 <h3 className="font-bold text-gray-800">Fisabilillah</h3>
                 <p className="text-gray-700 text-sm">Orang yang berjuang di jalan Allah (dakwah, pendidikan, dll)</p>
@@ -258,7 +260,7 @@ export default function ZakatPage() {
             </div>
 
             <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded">
-              <span className="text-2xl">8️⃣</span>
+              <span className="flex items-center justify-center w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full font-bold text-lg">8</span>
               <div>
                 <h3 className="font-bold text-gray-800">Ibnu Sabil</h3>
                 <p className="text-gray-700 text-sm">Musafir yang kehabisan bekal di perjalanan</p>

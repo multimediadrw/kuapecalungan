@@ -1,3 +1,5 @@
+import { 1, 2, 3, 4, 5, 6, 7, 8, AlertTriangle, BookOpen, CheckCircle, Library, Mosque, Target } from 'lucide-react';
+
 import Link from 'next/link';
 
 export default function HajiUmrahPage() {
@@ -46,7 +48,7 @@ export default function HajiUmrahPage() {
 
         {/* Dalil dan Hadits */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><BookOpen className="w-6 h-6 text-emerald-600" /> Dalil Al-Qur'an dan Hadits</h2>
           
           {/* Ayat Al-Qur'an */}
           <div className="mb-6">
@@ -78,7 +80,7 @@ export default function HajiUmrahPage() {
                 <strong>Artinya:</strong> "Barangsiapa berhaji karena Allah, tidak berkata rafats (kotor) dan tidak berbuat fasik, maka ia kembali (bersih dari dosa) seperti hari dilahirkan ibunya."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Bukhari no. 1521 dan Muslim no. 1350
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Bukhari no. 1521 dan Muslim no. 1350
               </p>
             </div>
           </div>
@@ -100,7 +102,7 @@ export default function HajiUmrahPage() {
                 <strong>Artinya:</strong> "Haji mabrur tidak ada balasan baginya kecuali surga."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Bukhari no. 1773 dan Muslim no. 1349
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Bukhari no. 1773 dan Muslim no. 1349
               </p>
             </div>
           </div>
@@ -121,7 +123,7 @@ export default function HajiUmrahPage() {
 
         {/* Rukun Haji */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">🎯 Rukun Haji (6 Rukun)</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><Target className="w-6 h-6 text-emerald-600" /> Rukun Haji (6 Rukun)</h2>
           <ol className="list-decimal list-inside text-gray-700 space-y-3">
             <li><strong>Ihram</strong> - Niat melakukan haji dan memakai pakaian ihram</li>
             <li><strong>Wukuf di Arafah</strong> - Berada di Arafah pada tanggal 9 Dzulhijjah</li>
@@ -134,7 +136,7 @@ export default function HajiUmrahPage() {
 
         {/* Wajib Haji */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">✅ Wajib Haji</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><CheckCircle className="w-6 h-6 text-emerald-600" /> Wajib Haji</h2>
           <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
             <li><strong>Ihram dari miqat</strong> - Memulai ihram dari tempat yang ditentukan</li>
             <li><strong>Mabit (bermalam) di Muzdalifah</strong> - Setelah wukuf di Arafah</li>

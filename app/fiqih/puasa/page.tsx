@@ -1,3 +1,5 @@
+import { AlertTriangle, BookOpen, CheckCircle, Library, Mosque, Target } from 'lucide-react';
+
 import Link from 'next/link';
 
 export default function PuasaPage() {
@@ -48,7 +50,7 @@ export default function PuasaPage() {
 
         {/* Dalil dan Hadits */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">📖 Dalil Al-Qur'an dan Hadits</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><BookOpen className="w-6 h-6 text-emerald-600" /> Dalil Al-Qur'an dan Hadits</h2>
           
           {/* Ayat Al-Qur'an */}
           <div className="mb-6">
@@ -80,7 +82,7 @@ export default function PuasaPage() {
                 <strong>Artinya:</strong> "Barangsiapa berpuasa Ramadhan karena iman dan mengharap pahala dari Allah, maka diampuni dosa-dosanya yang telah lalu."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Bukhari no. 38 dan Muslim no. 760
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Bukhari no. 38 dan Muslim no. 760
               </p>
             </div>
           </div>
@@ -102,7 +104,7 @@ export default function PuasaPage() {
                 <strong>Artinya:</strong> "Apabila datang bulan Ramadhan, maka dibukakan pintu-pintu surga, ditutup pintu-pintu neraka, dan setan-setan dibelenggu."
               </p>
               <p className="text-sm text-gray-600 mt-3">
-                📚 <strong>Sumber:</strong> HR. Bukhari no. 1899 dan Muslim no. 1079
+                <Library className="w-4 h-4 text-emerald-600 inline" /> <strong>Sumber:</strong> HR. Bukhari no. 1899 dan Muslim no. 1079
               </p>
             </div>
           </div>
@@ -123,7 +125,7 @@ export default function PuasaPage() {
 
         {/* Rukun Puasa */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">🎯 Rukun Puasa (2 Rukun)</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><Target className="w-6 h-6 text-emerald-600" /> Rukun Puasa (2 Rukun)</h2>
           <ol className="list-decimal list-inside text-gray-700 space-y-3">
             <li>
               <strong>Niat</strong>
@@ -145,7 +147,7 @@ export default function PuasaPage() {
 
         {/* Hal yang Membatalkan Puasa */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">⚠️ Hal yang Membatalkan Puasa</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><AlertTriangle className="w-6 h-6 text-emerald-600" /> Hal yang Membatalkan Puasa</h2>
           <div className="space-y-3">
             <div className="border-l-4 border-red-500 pl-4">
               <h3 className="font-bold text-gray-800">1. Makan dan Minum dengan Sengaja</h3>
@@ -184,7 +186,7 @@ export default function PuasaPage() {
           </div>
 
           <div className="mt-4 bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded">
-            <h3 className="font-bold text-gray-800 mb-2">✅ Hal yang Tidak Membatalkan Puasa</h3>
+            <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2"><CheckCircle className="w-5 h-5 text-emerald-600" /> Hal yang Tidak Membatalkan Puasa</h3>
             <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4 text-sm">
               <li>Makan atau minum karena lupa</li>
               <li>Muntah tidak sengaja</li>

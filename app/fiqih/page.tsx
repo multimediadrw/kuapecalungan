@@ -1,4 +1,6 @@
+'use client';
 import Link from 'next/link';
+import { Droplet, Mosque, Moon, Coins, Landmark, Handshake, Lightbulb } from 'lucide-react';
 
 const fiqihCategories = [
   {
@@ -6,42 +8,42 @@ const fiqihCategories = [
     title: 'Thaharoh (Bersuci)',
     slug: 'thaharoh',
     description: 'Pelajari tentang tata cara bersuci, wudhu, mandi wajib, dan tayammum',
-    icon: '💧',
+    icon: <Droplet className="w-12 h-12 text-emerald-600" />,
   },
   {
     id: 2,
     title: 'Shalat',
     slug: 'shalat',
     description: 'Panduan lengkap tentang shalat lima waktu, shalat sunnah, dan tata caranya',
-    icon: '🕌',
+    icon: <Mosque className="w-12 h-12 text-emerald-600" />,
   },
   {
     id: 3,
     title: 'Puasa',
     slug: 'puasa',
     description: 'Ketentuan puasa Ramadhan, puasa sunnah, dan hal-hal yang membatalkan puasa',
-    icon: '🌙',
+    icon: <Moon className="w-12 h-12 text-emerald-600" />,
   },
   {
     id: 4,
     title: 'Zakat',
     slug: 'zakat',
     description: 'Penjelasan tentang zakat fitrah, zakat mal, dan tata cara penyalurannya',
-    icon: '💰',
+    icon: <Coins className="w-12 h-12 text-emerald-600" />,
   },
   {
     id: 5,
     title: 'Haji & Umrah',
     slug: 'haji-umrah',
     description: 'Rukun dan syarat haji serta umrah, beserta tata cara pelaksanaannya',
-    icon: '🕋',
+    icon: <Landmark className="w-12 h-12 text-emerald-600" />,
   },
   {
     id: 6,
     title: 'Muamalah',
     slug: 'muamalah',
     description: 'Fiqih muamalah meliputi jual beli, hutang piutang, dan transaksi lainnya',
-    icon: '🤝',
+    icon: <Handshake className="w-12 h-12 text-emerald-600" />,
   },
 ];
 
@@ -67,7 +69,7 @@ export default function FiqihPage() {
               href={`/fiqih/${category.slug}`}
               className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 border-t-4 border-emerald-500"
             >
-              <div className="text-5xl mb-4">{category.icon}</div>
+              <div className="mb-4">{category.icon}</div>
               <h2 className="text-2xl font-bold text-gray-800 mb-3">
                 {category.title}
               </h2>
@@ -97,7 +99,7 @@ export default function FiqihPage() {
         {/* Info Box */}
         <div className="mt-12 bg-emerald-50 rounded-lg p-8 border border-emerald-200">
           <div className="flex items-start space-x-4">
-            <div className="text-4xl">💡</div>
+            <Lightbulb className="w-10 h-10 text-emerald-600 flex-shrink-0" />
             <div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">
                 Butuh Penjelasan Lebih Detail?
