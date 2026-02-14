@@ -1,4 +1,4 @@
-import { 1, 2, 3, 4, 5, 6, 7, 8, AlertTriangle, BookOpen, CheckCircle, Library, Church, Target } from 'lucide-react';
+import { AlertTriangle, BookOpen, CheckCircle, Library, Church, Target } from 'lucide-react';
 
 import Link from 'next/link';
 
