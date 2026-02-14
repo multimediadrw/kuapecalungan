@@ -1,4 +1,5 @@
-import { AlertTriangle, BookOpen, CheckCircle, FileText, Handshake, Library, Church, Target } from 'lucide-react';
+import MosqueIcon from '@/app/components/MosqueIcon';
+import { AlertTriangle, BookOpen, CheckCircle, FileText, Handshake, Library, Target } from 'lucide-react';
 
 import Link from 'next/link';
 

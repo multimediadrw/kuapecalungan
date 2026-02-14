@@ -1,4 +1,5 @@
-import { AlertTriangle, BookOpen, CheckCircle, Library, Church, Target } from 'lucide-react';
+import MosqueIcon from '@/app/components/MosqueIcon';
+import { AlertTriangle, BookOpen, CheckCircle, Library, Target } from 'lucide-react';
 
 import Link from 'next/link';
 
@@ -35,7 +36,7 @@ export default function ShalatPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Pengertian */}
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><Church className="w-6 h-6 text-emerald-600" /> Pengertian Shalat</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2"><MosqueIcon className="w-6 h-6 text-emerald-600" /> Pengertian Shalat</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Shalat secara bahasa berarti doa. Sedangkan secara istilah syariat, shalat adalah ibadah yang 
             tersusun dari beberapa perkataan dan perbuatan yang dimulai dengan takbir dan diakhiri dengan salam, 
